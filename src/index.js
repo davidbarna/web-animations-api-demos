@@ -1,7 +1,5 @@
 import './index.css'
 
-require('./demo-1')
-
 const hash = window.location.hash.substring(1)
 switch (hash) {
   case 'demo-1':
@@ -28,5 +26,6 @@ switch (hash) {
   case 'demo-8':
     require('./demo-8')
     break
+  default:
+    require('./demo-1')
 }
-document.getElementById('app').innerHTML = `<h1>Web Animations Demos</h1>`
