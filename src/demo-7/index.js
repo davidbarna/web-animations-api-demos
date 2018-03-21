@@ -10,7 +10,11 @@ const anims = element.getAnimations()
 const anim = anims[0] // Animation declared in css
 
 getById('demo-btn-time').addEventListener('input', evt => {
+  console.clear()
+
   anim.pause()
   anim.currentTime = evt.target.value
   console.log('currentTime:', evt.target.value)
+  console.log('anim', anim.animationName)
+  console.log('anim.animationName:', anim.animationName)
 })

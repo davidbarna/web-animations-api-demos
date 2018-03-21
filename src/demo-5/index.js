@@ -24,5 +24,6 @@ const anim = element.animate(animKeyframes, animOptions)
 getById('demo-btn-time').addEventListener('input', evt => {
   anim.pause()
   anim.currentTime = evt.target.value
+  console.clear()
   console.log('currentTime:', evt.target.value)
 })

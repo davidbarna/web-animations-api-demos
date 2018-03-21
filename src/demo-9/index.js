@@ -24,5 +24,4 @@ var animationEffect = new KeyframeEffect(
   animOptions
 )
 
-const anim = new Animation(animationEffect)
-anim.play()
+document.timeline.play(animationEffect)
