@@ -1,6 +1,20 @@
 body {
   text-align: center;
+  padding: 20px;
 }
+
 .animated-icon {
-  width: 128px;
+  max-width: 128px;
+  margin-bottom: 20px;
+}
+
+button {
+  border-radius: 2px;
+  font-size: 14px;
+  padding: 4px 8px;
+  margin: 4px;
+}
+
+input {
+  width: 100%;
 }

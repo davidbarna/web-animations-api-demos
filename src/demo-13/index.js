@@ -20,7 +20,7 @@ const animOptions = {
   easing: 'ease-in-out', // 'linear', a bezier curve, etc. delay: 10, //milliseconds
   direction: 'alternate', // 'normal', 'reverse', etc.
   fill: 'both', //'backwards', 'both', 'none', 'auto'
-  iterations: 10
+  iterations: 4
 }
 
 const elems = Array.from(document.getElementsByClassName('animated-icon'))
@@ -32,7 +32,7 @@ const getKeyframesGroup = elems => {
     const options = Object.assign({}, animOptions, { delay: 150 * i })
     return new KeyframeEffect(elem, animKeyframes, options)
   })
-  return new GroupEffect(keyframeEffects)
+  return new SequenceEffect(keyframeEffects)
 }
 
 var effectsGroup1 = getKeyframesGroup(elemsGroup1)

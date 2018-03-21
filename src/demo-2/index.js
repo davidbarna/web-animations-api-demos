@@ -1,10 +1,11 @@
 import heart from '../icons/heart.svg'
 import './index.css'
+import { injectHTML, iconUrl } from '../utils.js'
 
-document.getElementById(
-  'demo'
-).innerHTML = `<p>JS</br /><img id="demo-2-elem-js" src="${heart}" /></p>
-<p>CSS<br /><img id="demo-2-elem-css" src="${heart}" /></p>`
+injectHTML(`<p>JS</br /><img class="animated-icon" src="${iconUrl}" /></p>
+<p>CSS<br /><img class="animated-icon css" src="${iconUrl}" /></p>`)
+
+const element = document.getElementsByClassName('animated-icon')[0]
 
 const animKeyframes = [
   { transform: 'scale(1)', opacity: 1 },
@@ -20,6 +21,4 @@ const animOptions = {
   fill: 'forwards' //'backwards', 'both', 'none', 'auto'
 }
 
-const anim = document
-  .getElementById('demo-2-elem-js')
-  .animate(animKeyframes, animOptions)
+element.animate(animKeyframes, animOptions)

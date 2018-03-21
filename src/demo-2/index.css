@@ -13,6 +13,6 @@
   }
 }
 
-#demo-2-elem-css {
+.animated-icon.css {
   animation: heart-beats 500ms ease-in-out infinite alternate;
 }

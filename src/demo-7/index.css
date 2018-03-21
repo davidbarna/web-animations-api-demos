@@ -19,9 +19,9 @@
   }
 }
 
-#demo-7-elem-css {
+#demo-elem-css {
   border-radius: 3px;
-  content: " ";
+  content: ' ';
   width: 100%;
   height: 32px;
   animation: progress 1000ms linear forwards;

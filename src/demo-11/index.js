@@ -4,11 +4,10 @@ injectHTML(`<img class="animated-icon" src="${iconUrl}" />`)
 
 const element = document.getElementsByClassName('animated-icon')[0]
 
-const animKeyframes = [
-  { transform: 'scale(1)', opacity: 1 },
-  { transform: 'scale(.7)' },
-  { transform: 'scale(.8)', opacity: 0.2 }
-]
+const animKeyframes = {
+  transform: ['scale(1)', 'scale(.7)', 'scale(.8)'],
+  opacity: [1, 0.2]
+}
 
 const animOptions = {
   duration: 500, //milliseconds
