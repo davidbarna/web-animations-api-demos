@@ -32,7 +32,7 @@ const getKeyframesGroup = elems => {
     const options = Object.assign({}, animOptions, { delay: 150 * i })
     return new KeyframeEffect(elem, animKeyframes, options)
   })
-  return new GroupEffect(keyframeEffects)
+  return new window.GroupEffect(keyframeEffects)
 }
 
 var effectsGroup1 = getKeyframesGroup(elemsGroup1)
