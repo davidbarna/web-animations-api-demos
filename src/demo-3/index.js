@@ -3,11 +3,11 @@ import { injectHTML, iconUrl, getById } from '../utils.js'
 injectHTML(`
 <img class="animated-icon" src="${iconUrl}" />
 <div>
-  <button id="btn-play" class="ui mini primary button">anim.play()</button>
-  <button id="btn-pause" class="ui mini primary button">anim.pause()</button>
-  <button id="btn-cancel" class="ui mini primary button">anim.cancel()</button>
-  <button id="btn-finish" class="ui mini primary button">anim.finish()</button>
-  <button id="btn-reverse" class="ui mini primary button">anim.reverse()</button>
+  <button id="btn-play" >anim.play()</button>
+  <button id="btn-pause" >anim.pause()</button>
+  <button id="btn-cancel" >anim.cancel()</button>
+  <button id="btn-finish" >anim.finish()</button>
+  <button id="btn-reverse" >anim.reverse()</button>
 </div>
 `)
 

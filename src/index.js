@@ -45,6 +45,9 @@ switch (hash) {
   case 'demo-13':
     load(POLYFILL_URL, (err, script) => require('./demo-13'))
     break
+  case 'demo-14':
+    require('./demo-14')
+    break
   default:
     require('./demo-1')
 }
